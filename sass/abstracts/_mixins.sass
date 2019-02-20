@@ -1,0 +1,18 @@
+@mixin responsive($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 600px)
+            @content
+
+    @if $breakpoint == tablet
+        @media only screen and (max-width: 1200px)
+            @content
+
+    @if $breakpoint == tabletPort
+        @media only screen and (max-width: 900px)
+            @content
+
+@mixin grid($cols: 2)
+    display: grid
+    grid: auto-flow / repeat($cols, 1fr)
+    grid-gap: 2rem
+    max-width: 960px

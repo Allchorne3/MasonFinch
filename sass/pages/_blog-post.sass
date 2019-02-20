@@ -1,0 +1,31 @@
+.blog-post
+    margin: 0 auto
+    max-width: 960px
+    width: 100%
+    
+    .blog-post-image
+        max-width: 960px
+        width: 100%
+        margin-bottom: $space
+
+    .post-title-date
+        margin-bottom: $space
+        .post-title
+            font:
+                size: 4rem
+                weight: $fw-xbold
+            letter-spacing: $letter-spacing
+        .post-subtitle
+
+    .post-text
+        margin-bottom: $space
+
+    .post-image-container
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+        grid-gap: 1rem
+        justify-items: center
+        margin: $space * 2 0
+        img
+            max-width: 480px
+            width: 100%

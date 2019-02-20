@@ -1,0 +1,26 @@
+.blog
+    display: grid
+    grid-template-columns: 1fr
+    justify-items: center
+
+    &-posts
+        width: 100%
+        max-width: 960px
+        margin-bottom: 3rem
+
+        &-image
+            width: 100%
+            max-width: inherit
+        
+        &-title
+            font: 
+                family: $ff-body
+                weight: $fw-light
+            letter-spacing: .2rem
+            color: lighten($clr-primary, 10%)
+        &-date
+            date
+                @extend .blog-posts-title
+                letter-spacing: 0
+                font-size: 1.3rem
+

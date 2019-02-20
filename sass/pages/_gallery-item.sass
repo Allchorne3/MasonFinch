@@ -1,0 +1,30 @@
+.gallery-items
+
+    font-weight: $fw-light
+    .gallery-images
+        display: grid
+        grid-template-columns: minmax(280px, 1fr)
+        justify-items: center
+        grid-row-gap: 2rem
+        margin-bottom: 3rem
+
+        img
+            max-width: 100%
+
+    .gallery-info
+        margin: 0 auto
+        +grid()
+        margin-bottom: $padding-medium
+        +responsive(phone)
+            +grid($cols: 1)
+            text-align: left
+
+        &-title
+            letter-spacing: .1em
+            text-transform: uppercase
+a 
+    text-align: center
+    color: lighten($clr-primary, 50%)
+    font-size: .5rem
+    text-decoration: none
+    margin-bottom: 2rem
